@@ -9,7 +9,6 @@ const CustomSelect = ({ handleCompanyChange, companyOptions }) => {
 
   // Get the hex value from the color name and variant
   const hexColor = colorMap[color]?.[950] || '#007fff'; // Fallback color
-  console.log(hexColor)
   const customStyles = {
     control: (provided) => ({
       ...provided,

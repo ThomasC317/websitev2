@@ -16,170 +16,174 @@ const Experiences = () => {
   };
 
   const projects = [
+    // === Projets Professionnels ===
+    {
+      title: "InPact",
+      company: "Infotel Blagnac - LABO",
+      year: "Avril 2025 - Maintenant",
+      description: `Refonte complète de l'application de tickets en Angular 20 en tant que Lead Front & ajout de fonctionnalités :<br/><br/>
+  • Refonte de l’architecture et choix des composants front.<br/>
+  • Design et intégration de nouvelles maquettes Figma.<br/>
+  • Développement et optimisation de la plateforme (tickets, téléchargements, licences, utilisateurs, clients).<br/>
+  • Point de contact principal côté front : démos, suivi et résolution de bugs.<br/>
+  • Encadrement et accompagnement des développeurs et stagiaires.<br/>
+  • Garant de la qualité, sécurité et maintenabilité du code.`,
+      tags: ["Angular","Gitlab","Jira","Vitest","SonarCloud","Figma"],
+    },
+    {
+      title: "MaJ License Manager",
+      company: "Infotel Blagnac - LABO",
+      year: "Fév - Avril 2025",
+      description: `Mise à jour de l’application de gestion de tickets et licences :<br/><br/>
+  • Analyse et correction des incompatibilités pour migration Angular.<br/>
+  • Tests fonctionnels et mise à jour des librairies.<br/>
+  • Défition de la liste des tâches à accomplir pour la réalisation de la migration.`,
+      tags: ["Angular", "Gitlab", "Jira", "Vitest"],
+    },
+    {
+      title: "Analyse d'impact",
+      company: "Infotel Blagnac - BPCE",
+      year: "Oct 2024 - Fév 2025",
+      description: `Analyse d’impact d’un changement de code sur le projet BPCE :<br/><br/>
+  • Identification des dépendances et risques.<br/>
+  • Communication avec l’équipe et suivi de l’avancement.`,
+      tags: ["Gitlab", "Bitbucket"],
+    },
     {
       title: "Tales of Arcanum",
-      year: "Août 2024 - Maintenant",
       company: "Projet Personnel",
-      description: `Création d'un Clicker game avec des aspects RPG fantasy :<br/><br/>
-• Listage des tâches à réaliser, suivi via Trello. <br/>
-• Recherche d'inspiration pour proposer des fonctionnalités intéressantes. <br/>
-• Développement du lore du jeu.<br/>
-• Architecture du projet web & back. <br/>
-• Développement du jeu.
-`,
+      year: "Août - Dec 2024",
+      description: `Création d'un Clicker game RPG fantasy :<br/><br/>
+  • Listage des tâches et suivi via Trello.<br/>
+  • Développement du lore et de l’architecture web & back.<br/>
+  • Développement du jeu et intégration des fonctionnalités prévues.<br/>
+  • Suivi et tests réguliers pour améliorer l’expérience utilisateur.`,
       tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs", "NodeJS", "Express"],
     },
     {
-      title: "Ce site web",
-      year: "Jui 2024",
+      title: "Site Web V2",
       company: "Projet Personnel",
-      description: `Création d'un nouveau site Portfolio :<br/><br/>
-• Recherche d'inspiration sur une liste conséquente de Portfolio pour imaginer un Portfolio original. <br/>
-• Recherche de composants React pour simplifier les développements.<br/>
-• Développement du Portfolio & responsivité. <br/>
-• Développement de composants customisés (CommandPrompt, formulaire de contact).
-`,
+      year: "Juin 2024",
+      description: `Création d'un portfolio personnel :<br/><br/>
+  • Recherche d'inspiration et composants React pour un design original.<br/>
+  • Développement du site et responsivité.<br/>
+  • Création de composants customisés (CommandPrompt, formulaire de contact).`,
       tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"],
     },
     {
       title: "R&D IA",
       company: "Infotel Blagnac",
-      year: "Mai 2024 - Maintenant",
-      description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise :<br/>
-<br/>
-• Analyse du fonctionnement des modèles.<br/>
-• Analyse des possibilités pour la mise en place dans le contexte de l'entreprise.<br/>
-• Veille technologique sur les avancées les plus récentes & analyse des besoins pour la mise en place.<br/>
-• Développement d'un MOC chatbot en react/nextjs suivant la charte graphique de l'entreprise.<br/>
-• Analyse pour l'installation et l'apprentissage d'un modèle.<br/>`,
+      year: "Mai - Oct 2024",
+      description: `Mise en place de l'IA dans les projets de l'entreprise :<br/><br/>
+  • Analyse des modèles et possibilités d'intégration.<br/>
+  • Veille technologique et analyse des besoins.<br/>
+  • Développement d’un MOC chatbot (React/Next.js).<br/>
+  • Installation et apprentissage d’un modèle pour tests.`,
       tags: ["React", "Python", "NextJs"],
     },
     {
       title: "MRDB",
       company: "Infotel Blagnac",
       year: "Avril - Mai 2024",
-      description: `Développement d’évolutions sur le projet MRDB :
-<br/><br/>
-• Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
-• Analyse des besoins du client.<br/>
-• Transformation des datas pour le calcul des nouvelles datas envoyés au front. <br/>
-• Communication avec le client pour l'évolution des besoins.`,
+      description: `Évolutions sur le projet MRDB :<br/><br/>
+  • Analyse des datasets et besoins client.<br/>
+  • Transformation et calcul des nouvelles données.<br/>
+  • Communication continue avec le client.`,
       tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Athenaa",
       company: "Infotel Blagnac",
       year: "Mars - Avril 2024",
-      description: `Développement d’une application back-end retournant des moyennes d’heures et de cycles de vol pour une liste de MSN :<br/>
-<br/>
-• Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
-• Transformation des datas pour le calcul des moyennes requises.<br/>
-• Récupération des datas côté front et insertion des nouvelles datas dans un diagramme, affichant le suivi par mois sur les 48 derniers mois.<br/>
-• Communication avec le client pour l'évolution des besoins.`,
+      description: `Application back-end calculant les moyennes d’heures et cycles de vol :<br/><br/>
+  • Transformation des datasets et calcul des moyennes.<br/>
+  • Intégration des données dans des diagrammes front.<br/>
+  • Communication avec le client pour ajustement des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Madness",
       company: "Infotel Blagnac",
       year: "Fév - Mars 2024",
-      description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/><br/>
-    • Analyse de la transformation des datas.<br/>
-    • Proposition d’optimisations sur les transformations.<br/>
-    • Rédaction de documentation.<br/>
-    • Chiffrage pour le développement d'un back-end au projet.`,
+      description: `Analyse d’un outil Contour pour la transformation de données :<br/><br/>
+  • Optimisation des transformations de données.<br/>
+  • Rédaction de documentation et chiffrage pour le développement back-end.`,
       tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Airframe Services",
       company: "Infotel Blagnac",
-      year: "Déc - Fév 2024",
-      description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/><br/>
-    • Création d’une application data retournant les informations nécessaires au suivi des KPIs.<br/>
-    • Intégration des calculs des différents KPIs côté front-end.<br/>
-    • Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
-    • Création de fichier fusion pour le stockage en dur de données insérables par le client.
-    • Communication avec le client pour l'évolution des besoins.`,
+      year: "Déc 2023 - Fév 2024",
+      description: `Application Slate pour le suivi des KPIs :<br/><br/>
+  • Création et intégration des calculs de KPIs.<br/>
+  • Optimisation des requêtes et stockage des données.<br/>
+  • Communication avec le client pour évolution des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "ASN/AOG",
       company: "Infotel Blagnac",
       year: "Sept - Déc 2023",
-      description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/><br/>
-    • Analyse des tâches réalisés, et du restant à faire.<br/>
-    • Développement d'une fonctionnalité permettant le suivi des incidents sur des avions.<br/>
-    • Développement d'une fonctionnalité de création d'incident pour un avion donné.<br/>
-    • Développement d'une fonctionnalité d'administration des incidents en création ou en édition.<br/>
-    • Développement d'une fonctionnalité d'administration d'abonnements, permettant le filtrage des informations affichées aux utilisateurs sur la page principale.<br/>
-    • Développement d'une gestion de rôles sur les différentes fonctionnalités spécifiées précédement.`,
+      description: `Mise à niveau d'une application pour le suivi des incidents de flotte :<br/><br/>
+  • Analyse des fonctionnalités existantes et développement des nouvelles.<br/>
+  • Administration des incidents, abonnements et gestion des rôles.<br/>
+  • Développement des fonctionnalités côté front et back.`,
       tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"],
     },
     {
       title: "LP ADV",
       company: "LP Promotion",
       year: "2022 - Mai 2023",
-      description: `Refonte de l'outil de l'administration des ventes simplifiant la gestion des étapes d'un dossier :<br/><br/>
-    • Analyse de l'ancienne DB pour produire un schéma pour la nouvelle database, permettant aussi une synchronisation avec les anciennes données.<br/>
-    • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
-    • Développement d'une fonctionnalité de filtrage des résidences et lots en fonction de paramètres (nom, type de résidence,... ).<br/>
-    • Intégration fidèles de maquettes faite depuis Figma par la team UX/UI.<br/>
-    • Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
-    • Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
-    • Tests fonctionnels & Utilisateurs.`,
+      description: `Refonte de l'outil d'administration des ventes :<br/><br/>
+  • Analyse et migration de la base de données.<br/>
+  • Développement de fonctionnalités de filtrage et intégration des maquettes Figma.<br/>
+  • Refonte d'un microservice de génération et envoi de courriers (AR24).<br/>
+  • Optimisation des appels API et tests fonctionnels utilisateurs.`,
       tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
     },
     {
       title: "LP WORKPLACE",
       company: "LP Promotion",
       year: "Juin - Déc 2021",
-      description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/><br/>
-    • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
-    • Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
-    • Barre de recherche permettant de lancer une recherche pour trouver des process, des documents ou des employés de l'entreprise.<br/>
-    • Ajout d'un système de favoris permettant de garder certains process ou documents faciles d'accès.<br/>
-    • Tests fonctionnels en continue.<br/>
-    • Tests avec différents utilisateurs.`,
+      description: `Création d’un outil interne de recherche et gestion inter-services :<br/><br/>
+  • Développement d’une page Glossaire filtrable et d’une barre de recherche pour documents, processus et employés.<br/>
+  • Mise en place d’un système de favoris pour un accès rapide aux contenus importants.<br/>
+  • Tests fonctionnels et validation avec différents utilisateurs.`,
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
+    },
+    {
+      title: "LP INSIDE",
+      company: "LP Promotion",
+      year: "Oct 2020 - Mai 2023",
+      description: `Mise en place d'une plateforme interne recensant les projets sous forme de modules :<br/><br/>
+  • Mise en place de méthodes agiles (SCRUM) et gestion des projets via Azure AD.<br/>
+  • Conteneurisation des microservices (Docker) et pipelines CI/CD.<br/>
+  • Process qualité du code (conventions, branch policies, SonarCloud).<br/>
+  • Communication avec le service UX/UI et architecture des communications entre microservices et SPA.`,
       tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
     },
     {
       title: "Ui Framework",
       company: "LP Promotion",
       year: "Oct 2020 - Mai 2023",
-      description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/><br/>
-    • Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
-    • Remplacement des composants sur les projets récents.<br/>
-    • Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
-    • Mise en place de variables CSS pour permettre une customisation des styles pour être en adéquation avec la charte graphique de chaque projet.<br/>
-    • Mise en place d'un site documentation des composants avec différents cas d'utilisations, une liste des paramètres et un tuto pour l'importation dans les projets.`,
+      description: `Développement d'une librairie Blazor de composants réutilisables et customisables :<br/><br/>
+  • Analyse des projets legacy pour identifier les composants à développer.<br/>
+  • Développement et remplacement des composants sur les projets récents.<br/>
+  • Mise en place de généricité et variables CSS pour la réutilisation.<br/>
+  • Création d'un site de documentation avec cas d'utilisation et tutoriels.`,
       tags: ["Blazor", "C#", "Azure AD", "SQL Server"],
     },
     {
-      title: "LP INSIDE",
-      company: "LP Promotion",
-      year: "Oct 2020 - Mai 2023",
-      description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/><br/>
-    • Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
-    • Passage sous Azure AD pour la gestion des projets.<br/>
-    • Conteneurisation des microservices (Docker).<br/>
-    • Installation de pipelines CI/CD sur chaque projet.<br/>
-    • Process de qualité du code (Policies de branch, conventions de nommage, Quality gate de sonarCloud).<br/>
-    • Communication avec le service UX/UI pour mieux répondre aux besoins des services cibles.<br/>
-    • Architecture de la communication entre les différents microservices & les SPA.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
-    },
-    {
-      title: "Flux Partenaire V3",
+      title: "Flux Partenaire",
       company: "LP Promotion",
       year: "Oct 2019 - Sept 2020",
-      description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/><br/>
-    • Mise en place d'une architecture microservice multicouches.<br/>
-    • Conception & modélisation d'une API REST.<br/>
-    • Développement d'une interface pour l'administration de l'application. Celle-ci permet d'ajouter ou de supprimer des partenaires, et de lancer l'envoi de flux aux partenaires.<br/>
-    • Ajout d'envoi de flux via FTP ou sFTP.<br/>
-    • Ajout d'une fonctionnalité d'édition des noms de balises des fichiers XML pour répondre aux besoins spécifiques de chaque client.<br/>
-    • Mise en place d'une gestion d'erreur avec vérification des balises et gestion d'erreurs.`,
+      description: `Refonte globale d'un projet de génération de flux XML :<br/><br/>
+  • Architecture microservices multicouches.<br/>
+  • Conception et développement d'une API REST.<br/>
+  • Développement d'une interface d'administration et envoi de flux via FTP/sFTP.<br/>
+  • Gestion des erreurs et validation des flux XML.`,
       tags: ["JavaScript", "C#", "SQL Server"],
-    },
+    }
   ];
 
   const companyNames = projects.map((project) => project.company);
@@ -306,7 +310,7 @@ const Experiences = () => {
                         UI/Styling/Animations:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
-                        shadcn/ui, TailwindCSS, framer-motion.
+                        shadcn/ui, TailwindCSS, framer-motion, Angular Material.
                       </td>
                     </tr>
                     <tr>
@@ -330,7 +334,7 @@ const Experiences = () => {
                         Versionning:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
-                        Git (Gitlab & Github).
+                        Git (Gitlab & Github), Gerrit.
                       </td>
                     </tr>
                   </thead>
@@ -367,7 +371,7 @@ const Experiences = () => {
                         Optimisation:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
-                        Réduction des temps de récupération des datas.
+                        Réduction des temps de récupération des datas, sécurisation du code, optimisation de l’architecture.
                       </td>
                     </tr>
                     <tr>
@@ -383,7 +387,7 @@ const Experiences = () => {
                         Travail:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
-                        Autonomie, collaboration, gestion du stress,
+                        Autonomie, collaboration, gestion du stress, créativité, sens du détail,
                         adaptabilité.
                       </td>
                     </tr>
@@ -535,9 +539,7 @@ const Experiences = () => {
                         </a>
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
-                        J'ai beau avoir travaillé peu avec, l'utilité est
-                        impressionante. Très simple à installer et la qualité de
-                        code est rapidement améliorée.
+                        L'intégration de SonarCloud dans les pipelines CI/CD est très utile pour assurer la qualité du code et éviter les bugs. J'ai beaucoup appris sur les bonnes manières de developpement grâce aux linters.
                       </td>
                     </tr>
                     <tr>

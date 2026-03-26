@@ -47,8 +47,7 @@ const Home = () => {
               />
             </h1>
             <p className="text-lg text-gray-700 md:text-xl lg:text-2xl">
-              Je suis un développeur Full-Stack, actuellement très intéressé
-              pour développer mes compétences en Front.
+              Je suis un développeur Full-Stack, créatif avec le sens du détail, actuellement chez INFOTEL.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
               <Button
